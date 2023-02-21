@@ -115,5 +115,5 @@ document.getElementById('prev').addEventListener('click', () => {
 
 
 // function playSong(index){
-//     // play the song at the `index` in songs
+//     // play the song at the `index` in songs 
 // }
