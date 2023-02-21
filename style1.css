@@ -1,0 +1,155 @@
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul{
+    color: white;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: black;
+    height:70px;
+    font-size: 18px;
+}
+
+#logo{
+    width:79px;
+    height:74px;
+}
+
+#spotify{
+    font-weight: bolder;
+}
+
+nav ul li{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.brand img{
+    width:65px;
+    height: 60px;
+}
+
+.container{
+    color:white;
+    font-size: medium;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    /* width:80%; */
+    margin: 30px 70px;
+    height:75vh;
+    padding-top:20px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.SongImage{
+ width:20px;
+ height:20px;
+ position: absolute;
+ left:100px;
+}
+
+#gif{
+    border: 2px solid white;
+    width:40px;
+    height:40px;
+    position: absolute;
+    left:50px;
+    opacity:0;
+    transition: opacity 0.5s ease-out;
+}
+
+.songsList{
+    display:flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+    border :2px solid white;
+    border-radius:12px;
+    width:40%;
+    margin: 40px 0px;
+    padding:8px 5px;
+}
+
+.songs{
+    margin-top:20px;
+}
+
+.timestamp{
+   position: absolute;
+   right:680px;
+}
+
+#play1{
+    color:white;
+    position:absolute;
+    right:652px;
+    top:220px;
+cursor: pointer;
+
+}
+#play2{
+    color:white;
+    position:absolute;
+    right:652px;
+    top:298px;
+cursor: pointer;
+}
+
+#play3{
+    color:white;
+    position:absolute;
+    right:652px;
+    top:376px;
+cursor: pointer;
+}
+
+#play4{
+    color:white;
+    position:absolute;
+    right:652px;
+    top:455px;
+    cursor: pointer;
+}
+
+
+
+.bottom{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    position: sticky;
+    height:90px;
+    color:white;
+    flex-direction: column;
+
+}
+
+.masterSongName{
+    position: absolute;
+    left: 10vw;
+}
+
+.icons{
+    display: flex;
+    cursor:pointer;
+}
+
+.pp{
+    margin: 8px;
+}
+
+#progressBar{
+width: 80%;
+}
