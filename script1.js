@@ -2,6 +2,10 @@ console.log("hey there");
 
 let songIndex = 0;
 let audioElement = new Audio('1.mp3');
+let audio1 = new Audio('1.mp3');
+let audio2 = new Audio('2.mp3');
+let audio3 = new Audio('3.mp3');
+let audio4 = new Audio('4.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let prev = document.getElementById('prev');
 let next = document.getElementById('next');
@@ -95,25 +99,80 @@ document.getElementById('prev').addEventListener('click', () => {
     }
 })
 
-// prev.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     if(current === 0){
-//         current = 3;
-//         return playSong(current);
-//     }
-//     return playSong(--current);
-// })
 
-// next.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     if(current === 3){
-//         current = 0;
-//         return playSong(current);
-//     }
-//     return playSong(++current);
-// })
+document.getElementById("play1").addEventListener("click",function(){
+    if(audio1.paused){
+        audio2.pause();
+        audio3.pause();
+        audio4.pause();
+        audio1.play();
+        document.getElementById("play1").classList.remove('fa-play')
+        document.getElementById("play1").classList.add('fa-pause')
+        gif.style.opacity=1;
+    }
+    else{
+        audio1.pause();
+        document.getElementById("play1").classList.remove('fa-pause')
+        document.getElementById("play1").classList.add('fa-play')
+        gif.style.opacity=0;
 
+    }
+})
 
-// function playSong(index){
-//     // play the song at the `index` in songs 
-// }
+document.getElementById("play2").addEventListener("click",function(){
+    if(audio2.paused){
+        audio1.pause();
+        audio3.pause();
+        audio4.pause();
+        audio2.play();
+        document.getElementById("play2").classList.remove('fa-play')
+        document.getElementById("play2").classList.add('fa-pause')
+        gif.style.opacity=1;
+
+    }
+    else{
+        audio2.pause();
+        document.getElementById("play2").classList.remove('fa-pause')
+        document.getElementById("play2").classList.add('fa-play')
+        gif.style.opacity=0;
+
+    }
+})
+document.getElementById("play3").addEventListener("click",function(){
+    if(audio3.paused){
+        audio1.pause();
+        audio2.pause();
+        audio4.pause();
+        audio3.play();
+        document.getElementById("play3").classList.remove('fa-play')
+        document.getElementById("play3").classList.add('fa-pause')
+        gif.style.opacity=1;
+
+    }
+    else{
+        audio3.pause();
+        document.getElementById("play3").classList.remove('fa-pause')
+        document.getElementById("play3").classList.add('fa-play')
+        gif.style.opacity=0;
+
+    }
+})
+document.getElementById("play4").addEventListener("click",function(){
+    if(audio4.paused){
+        audio1.pause();
+        audio2.pause();
+        audio3.pause();
+        audio4.play();
+        document.getElementById("play4").classList.remove('fa-play')
+        document.getElementById("play4").classList.add('fa-pause')
+        gif.style.opacity=1;
+
+    }
+    else{
+        audio4.pause();
+        document.getElementById("play4").classList.remove('fa-pause')
+        document.getElementById("play4").classList.add('fa-play')
+        gif.style.opacity=0;
+
+    }
+})
