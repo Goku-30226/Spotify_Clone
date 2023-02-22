@@ -109,15 +109,19 @@ document.getElementById("play1").addEventListener("click",function(){
         document.getElementById("play1").classList.remove('fa-play')
         document.getElementById("play1").classList.add('fa-pause')
         gif.style.opacity=1;
+        document.getElementById("songID").innerText="Let Me Love You";
     }
     else{
         audio1.pause();
         document.getElementById("play1").classList.remove('fa-pause')
         document.getElementById("play1").classList.add('fa-play')
         gif.style.opacity=0;
+        document.getElementById("songID").innerText="";
+
 
     }
 })
+
 
 document.getElementById("play2").addEventListener("click",function(){
     if(audio2.paused){
@@ -128,6 +132,7 @@ document.getElementById("play2").addEventListener("click",function(){
         document.getElementById("play2").classList.remove('fa-play')
         document.getElementById("play2").classList.add('fa-pause')
         gif.style.opacity=1;
+        document.getElementById("songID").innerText="Perfect";
 
     }
     else{
@@ -135,6 +140,7 @@ document.getElementById("play2").addEventListener("click",function(){
         document.getElementById("play2").classList.remove('fa-pause')
         document.getElementById("play2").classList.add('fa-play')
         gif.style.opacity=0;
+        document.getElementById("songID").innerText="";
 
     }
 })
@@ -147,6 +153,8 @@ document.getElementById("play3").addEventListener("click",function(){
         document.getElementById("play3").classList.remove('fa-play')
         document.getElementById("play3").classList.add('fa-pause')
         gif.style.opacity=1;
+        document.getElementById("songID").innerText="Shape of You";
+
 
     }
     else{
@@ -154,6 +162,8 @@ document.getElementById("play3").addEventListener("click",function(){
         document.getElementById("play3").classList.remove('fa-pause')
         document.getElementById("play3").classList.add('fa-play')
         gif.style.opacity=0;
+        document.getElementById("songID").innerText="";
+
 
     }
 })
@@ -166,6 +176,8 @@ document.getElementById("play4").addEventListener("click",function(){
         document.getElementById("play4").classList.remove('fa-play')
         document.getElementById("play4").classList.add('fa-pause')
         gif.style.opacity=1;
+        document.getElementById("songID").innerText="Despacito";
+
 
     }
     else{
@@ -173,6 +185,8 @@ document.getElementById("play4").addEventListener("click",function(){
         document.getElementById("play4").classList.remove('fa-pause')
         document.getElementById("play4").classList.add('fa-play')
         gif.style.opacity=0;
+        document.getElementById("songID").innerText="";
+
 
     }
 })
